@@ -3,12 +3,27 @@
   "version": "1.0.0",
   "description": "for my daily use case",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "serve src",
+    "test": "jest"
+  },
   "keywords": [
     "exercism",
     "javascript",
     "learning"
   ],
   "author": "aindrajaya",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "regenerator-runtime": "^0.13.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@testing-library/dom": "^7.2.1",
+    "@testing-library/jest-dom": "^5.5.0",
+    "babel-jest": "^25.3.0",
+    "jest": "^25.3.0",
+    "serve": "^11.3.0"
+  }
 }
