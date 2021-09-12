@@ -1,0 +1,14 @@
+{
+  "name": "javascript-track",
+  "version": "1.0.0",
+  "description": "for my daily use case",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "exercism",
+    "javascript",
+    "learning"
+  ],
+  "author": "aindrajaya",
+  "license": "ISC"
+}
