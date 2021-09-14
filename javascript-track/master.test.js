@@ -1,4 +1,4 @@
-import { hello } from "./helloWorld";
+import { hello } from "./src/helloWorld";
 
 describe('Hello World', () => {
   test('Say Hi!', () => {
