@@ -27,3 +27,37 @@ implement the `totalTimeInMinutes` function that takes two *parameters*: the `nu
 totalTimeInMinutes(3, 20);
 // => 26
 ```
+
+## Introduction
+JavaScript is a dynamic language, supporting object-oriented, imperative, and declarative (e.g functional programming) styles.
+
+### (Re-) Assignment
+There are a few primary ways to assign values to names in JavaScript- using variables of constants. On Exercism, variables are always written in **camelCase**; constants are written in **SCREAMING_SNAKE_CASE**. There is no official organizations have various style guides. *Feel free to write variables any way you like*. The upside from writing them the way the exercises are prepared is that they'll be highlighted differently in the web interface and most IDEs.
+Variables in JavaScript can be defined using the `const`, `let` or `var` keyword. A variable can reference different values over ist lifetime when using `let` or `var`. For exampe, `myFirstVariabe` can be defined and redefined many times using the assignment operator `=` : 
+```js
+let myFirstVariable = 1;
+myFirstVariable = 'some string';
+myFirstVariable = new SomeComplexClass();
+```
+In contrast to `let` and `var`, variables that are defined with `const` can only be assigned once. This is used to define constants in JavaScript.
+```js
+const MY_FIRST_CONSTANT = 10;
+
+// Can not be re-assigned.
+MY_FIRST_CONSTANT = 20;
+// => TypeError: Assignment to constant variable.
+```
+> NOTE:  In a later Concept Exercise the difference between constant assignment / binding and constant value is explored and explained.
+
+### Function Declarations
+In JavaScript, units of functionality are encapsulated in *functions*, usually grouping gunctions together. These functions can take parameters (arguments), and can *return* a value using the `return` keyword. Functions are invoked using `()` syntax.
+```js
+function add(num1, num2){
+  return num1 + num2;
+}
+
+add(2,3) //5
+```
+> NOTE: In JavaScript there are *many* different ways to declare a functin. These other ways look different than using the `function` keyword. The track tries to gradually introduce them, but if you already know about them, feel free ot use any of them. In most cases, using one or the other isn't better or worse.
+
+### Exposing to Other Files
