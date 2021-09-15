@@ -3,7 +3,8 @@ import {
   helloWorldConsole 
 } from "./src/helloWorld";
 import { 
-  EXPECTED_MINUTES_IN_OVEN
+  EXPECTED_MINUTES_IN_OVEN, 
+  remainingMinutesInOven
 } from "./src/secondExercise";
 
 
@@ -19,5 +20,10 @@ describe('Hello World', () => {
 describe('The Lasagne Prep', () => {
   test('1. Constant is defined correctly', () => {
     expect(EXPECTED_MINUTES_IN_OVEN).toBe(40);
+  });
+  test('2. calculates the remaining time', () => {
+    expect(remainingMinutesInOven(25)).toBe(15);
+    expect(remainingMinutesInOven(5)).toBe(35);
+    expect(remainingMinutesInOven(39)).toBe(1);
   });
 })
