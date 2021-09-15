@@ -61,3 +61,24 @@ add(2,3) //5
 > NOTE: In JavaScript there are *many* different ways to declare a functin. These other ways look different than using the `function` keyword. The track tries to gradually introduce them, but if you already know about them, feel free ot use any of them. In most cases, using one or the other isn't better or worse.
 
 ### Exposing to Other Files
+To make a `function`, a constant, or a variable available in *other files*, they need to be **exported** using the `export` keyword. Another file may then **import** these using the `import` keyword. This is also known as the module system. A great example is how all the test work. Each exercise has at least one file for example `lasagna.js`, which contains the *implementation*. Additionally there is at leas one other file, for example `lasagna.spec.js`, that contains the *tests*. This file *imports* the public (ie. exported) entities in order to test the implementation:
+```js
+// file.js
+export const MY_VALUE = 10;
+
+export function add(num1, num2) {
+  return num1 + num2;
+}
+
+// file.spec.js
+import { MY_VALUE, add } from './file';
+
+add(MY_VALUE, 5);
+// => 15
+```
+
+## How to Debug
+When a test fails, a message is displayed describing what went wrong and for which input. You can also use the fact that any `console` output will be shown too. You can write to the console using:
+```js
+console.log('Debug message');
+```
