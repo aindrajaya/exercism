@@ -44,6 +44,7 @@
   * @returns {number} the number of minutes remaining
   */
  export function remainingMinutesInOven(actualMinutesInOven) {
+  return EXPECTED_MINUTES_IN_OVEN - actualMinutesInOven
     throw new Error('Please implement the remainingMinutesInOven function');
  }
  
