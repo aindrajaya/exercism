@@ -26,4 +26,8 @@ describe('The Lasagne Prep', () => {
     expect(remainingMinutesInOven(5)).toBe(35);
     expect(remainingMinutesInOven(39)).toBe(1);
   });
+  test('3. works correctly for the edge cases', () => {
+    expect(remainingMinutesInOven(40)).toBe(0);
+    expect(remainingMinutesInOven(0)).toBe(40);
+  });
 })
