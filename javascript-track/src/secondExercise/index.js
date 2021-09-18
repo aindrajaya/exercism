@@ -55,6 +55,7 @@
   * @returns {number} the total preparation time
   */
  export function preparationTimeInMinutes(numberOfLayers) {
+  return PREPARATION_MINUTES_PER_LAYER*numberOfLayers
    throw new Error('Please implement the preparationTimeInMinutes function');
  }
  
