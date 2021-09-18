@@ -30,4 +30,9 @@ describe('The Lasagne Prep', () => {
     expect(remainingMinutesInOven(40)).toBe(0);
     expect(remainingMinutesInOven(0)).toBe(40);
   });
+  test('4. calculates the preparation time', () => {
+    expect(preparationTimeInMinutes(1)).toBe(2);
+    expect(preparationTimeInMinutes(2)).toBe(4);
+    expect(preparationTimeInMinutes(8)).toBe(16)
+  });
 })
