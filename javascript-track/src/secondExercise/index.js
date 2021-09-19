@@ -55,7 +55,7 @@
   * @returns {number} the total preparation time
   */
  export function preparationTimeInMinutes(numberOfLayers) {
-  return PREPARATION_MINUTES_PER_LAYER*numberOfLayers
+  return PREPARATION_MINUTES_PER_LAYER*numberOfLayers 
    throw new Error('Please implement the preparationTimeInMinutes function');
  }
  
@@ -68,6 +68,7 @@
   * @returns {number} the total working time
   */
  export function totalTimeInMinutes(numberOfLayers, actualMinutesInOven) {
+  return actualMinutesInOven + preparationTimeInMinutes(numberOfLayers)
    throw new Error('Please implement the totalTimeInMinutes function');
  }
  
