@@ -4,7 +4,8 @@ import {
 } from "./src/helloWorld";
 import { 
   EXPECTED_MINUTES_IN_OVEN, 
-  remainingMinutesInOven
+  remainingMinutesInOven,
+  totalTimeInMinutes
 } from "./src/secondExercise";
 
 
@@ -35,4 +36,9 @@ describe('The Lasagne Prep', () => {
     expect(preparationTimeInMinutes(2)).toBe(4);
     expect(preparationTimeInMinutes(8)).toBe(16)
   });
+  test('5. calculates the total cooking time', () => {
+    expect(totalTimeInMinutes(1, 5)).toBe(7);
+    expect(totalTimeInMinutes(4, 15)).toBe(23);
+    expect(totalTimeInMinutes(1, 35)).toBe(37);
+  })
 })
