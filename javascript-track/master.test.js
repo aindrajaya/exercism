@@ -4,6 +4,7 @@ import {
 } from "./src/helloWorld";
 import { 
   EXPECTED_MINUTES_IN_OVEN, 
+  preparationTimeInMinutes, 
   remainingMinutesInOven,
   totalTimeInMinutes
 } from "./src/secondExercise";
